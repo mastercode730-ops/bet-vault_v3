@@ -1,6 +1,6 @@
-'use client';
-import Image from 'next/image';
+"use client";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WA = 'https://wa.me/918678756678';
 
@@ -58,6 +58,7 @@ export default function Footer() {
           <div>
             <h4 style={{ color: '#60A5FA', fontWeight: 700, fontSize: '13px', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '16px' }}>Quick Links</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <li></li>
               {quickLinks.map(l => (
                 <li key={l.label}>
                   <button className="ft-link" onClick={() => document.querySelector(l.href)?.scrollIntoView({ behavior: 'smooth' })}>
@@ -137,6 +138,10 @@ export default function Footer() {
         <div style={{ borderTop: '1px solid rgba(59,130,246,0.1)', paddingTop: '20px', textAlign: 'center' }}>
           <p style={{ color: '#4B5563', fontSize: '12px', margin: '0 0 8px' }}>© {year} Bet Vault. All rights reserved.</p>
           <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '16px' }}>
+            <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" className="ft-legal-link">Sitemap</a>
+            <span style={{ color: '#374151' }}>·</span>
+            <a href="/robots.txt" target="_blank" rel="noopener noreferrer" className="ft-legal-link">Robots.txt</a>
+            <span style={{ color: '#374151' }}>·</span>
             {['Privacy Policy', 'Terms & Conditions', 'Responsible Gaming'].map(l => (
               <a key={l} href={WA} target="_blank" rel="noopener noreferrer" className="ft-legal-link">{l}</a>
             ))}
