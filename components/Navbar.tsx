@@ -99,7 +99,7 @@ export default function Navbar() {
               <a href={WA} target="_blank" rel="noopener noreferrer" className="whatsapp-btn"
                 style={{ padding: '9px 18px', borderRadius: '999px', fontSize: '13px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '7px' }}>
                 <WaIcon size={15} />
-                <span className="show-md" style={{ display: 'none' }}>WhatsApp Us</span>
+                <span>+91 87644 65110</span>
               </a>
 
               {/* Hamburger */}
@@ -129,7 +129,7 @@ export default function Navbar() {
             <div style={{ padding: '14px 20px' }}>
               <a href={WA} target="_blank" rel="noopener noreferrer" className="whatsapp-btn"
                 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', padding: '13px', borderRadius: '12px', fontSize: '14px', fontWeight: 700 }}>
-                <WaIcon size={18} /> WhatsApp Us Now — We Reply Fast
+                <WaIcon size={18} /> WhatsApp +91 87644 65110
               </a>
             </div>
           </div>
