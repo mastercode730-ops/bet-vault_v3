@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const WA = 'https://wa.me/918678756678';
+const WA = 'https://wa.me/91918764465110';
 
 const quickLinks = [
   { label: 'Home',         href: '#hero'         },

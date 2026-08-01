@@ -1,3 +1,4 @@
+import PaymentSection from '@/components/PaymentSection';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import IntroSection from '@/components/IntroSection';
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <IntroSection />
+      <PaymentSection />
         <FeaturesSection />
         <HowItWorksSection />
         <SportsSection />
