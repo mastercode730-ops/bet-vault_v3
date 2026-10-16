@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${post.title} | Bet Vault Blog`, description: post.excerpt };
 }
 
-const WA = 'https://wa.me/918678756678';
+const WA = 'https://wa.me/919306604159';
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

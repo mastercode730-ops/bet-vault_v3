@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const WA = 'https://wa.me/91918764465110';
+const WA = 'https://wa.me/919306604159';
 
 const features = [
   { img: '/trusted_platform.png', title: '100% Trusted', desc: 'Every account, every transaction goes through tight security checks. You bet — we handle the safety.' },

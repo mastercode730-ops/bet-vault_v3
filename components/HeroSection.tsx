@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 
-const WA = 'https://wa.me/91918764465110';
+const WA = 'https://wa.me/919306604159';
 
 const tickers = [
   '🏏 Live Cricket Betting', '⚡ ID in 5 Minutes', '🔐 Bank-Level Security',

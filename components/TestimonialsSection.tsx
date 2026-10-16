@@ -1,4 +1,4 @@
-const WA = 'https://wa.me/91918764465110';
+const WA = 'https://wa.me/919306604159';
 
 const testimonials = [
   { name: 'Rahul S.',  city: 'Mumbai',    stars: 5, sport: '🏏 IPL',       text: 'I have tried three other platforms before this one. Bet Vault is genuinely different — the ID was set up in about 8 minutes and my first withdrawal came through the same evening. That never happened with the others.' },

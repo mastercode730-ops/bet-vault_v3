@@ -1,4 +1,4 @@
-const WA = 'https://wa.me/91918764465110';
+const WA = 'https://wa.me/919306604159';
 
 const sports = [
   { icon: '🏏', name: 'Cricket',     hot: true  },

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const WA = 'https://wa.me/91918764465110';
+const WA = 'https://wa.me/919306604159';
 
 const quickLinks = [
   { label: 'Home',         href: '#hero'         },
@@ -50,7 +50,7 @@ export default function Footer() {
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className="whatsapp-btn"
               style={{ padding: '11px 22px', borderRadius: '999px', fontSize: '13px', fontWeight: 700, display: 'inline-flex' }}>
-              <WaIcon /> &nbsp;WhatsApp: +91 86787 56678
+              <WaIcon /> &nbsp;WhatsApp: +91 93066 04159
             </a>
           </div>
 
@@ -94,7 +94,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <div style={{ color: '#F9FAFB', fontSize: '13px', fontWeight: 600 }}>WhatsApp</div>
-                  <div style={{ color: '#6B7280', fontSize: '12px' }}>+91 86787 56678</div>
+                  <div style={{ color: '#6B7280', fontSize: '12px' }}>+91 93066 04159</div>
                 </div>
               </a>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
