@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "BetVault | Online Cricket Betting, Sports Betting & Casino's Trusted Cricket Betting ID Provider",
   description: 'Get your instant online cricket betting ID in minutes. Fast setup, secure payments, 24/7 support. Join 3 million+ bettors across India.',
   keywords: 'cricket betting id, online betting india, ipl betting, cricket id provider, bet vault',
+  verification: {
+    google: '7Bz1mXOq7flC70aRCRp1coGXiLH7XLtg1gMqGeG9fTM',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
