@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-const WA = 'https://wa.me/919306604159';
+const WA = 'https://wa.me/918360750829';
 
 const navLinks = [
   { label: 'Home',       href: '#hero'         },
@@ -99,7 +99,7 @@ export default function Navbar() {
               <a href={WA} target="_blank" rel="noopener noreferrer" className="whatsapp-btn"
                 style={{ padding: '9px 18px', borderRadius: '999px', fontSize: '13px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '7px' }}>
                 <WaIcon size={15} />
-                <span>+91 93066 04159</span>
+                <span>+91 83607 50829</span>
               </a>
 
               {/* Hamburger */}
@@ -129,7 +129,7 @@ export default function Navbar() {
             <div style={{ padding: '14px 20px' }}>
               <a href={WA} target="_blank" rel="noopener noreferrer" className="whatsapp-btn"
                 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px', padding: '13px', borderRadius: '12px', fontSize: '14px', fontWeight: 700 }}>
-                <WaIcon size={18} /> WhatsApp +91 93066 04159
+                <WaIcon size={18} /> WhatsApp +91 83607 50829
               </a>
             </div>
           </div>

@@ -13,7 +13,58 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${post.title} | Bet Vault Blog`, description: post.excerpt };
 }
 
-const WA = 'https://wa.me/919306604159';
+const WA = 'https://wa.me/918360750829';
+
+function renderInline(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={idx} style={{ color: '#F3F4F6', fontWeight: 700 }}>
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      const [, label, href] = linkMatch;
+      const isInternal = href.startsWith('/');
+      if (isInternal) {
+        return (
+          <Link
+            key={idx}
+            href={href}
+            style={{
+              color: '#60A5FA',
+              textDecoration: 'underline',
+              textUnderlineOffset: '3px',
+              fontWeight: 600,
+            }}
+          >
+            {label}
+          </Link>
+        );
+      }
+      return (
+        <a
+          key={idx}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: '#60A5FA',
+            textDecoration: 'underline',
+            textUnderlineOffset: '3px',
+            fontWeight: 600,
+          }}
+        >
+          {label}
+        </a>
+      );
+    }
+    return <span key={idx}>{part}</span>;
+  });
+}
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -73,25 +124,83 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               if (para.startsWith('## ')) {
                 return (
                   <h2 key={i} style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', color: '#60A5FA', marginTop: '36px', marginBottom: '14px', letterSpacing: '-0.01em' }}>
-                    {para.replace('## ', '')}
+                    {renderInline(para.replace('## ', ''))}
                   </h2>
                 );
               }
+              if (para.startsWith('### ')) {
+                return (
+                  <h3 key={i} style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: '#93C5FD', marginTop: '28px', marginBottom: '12px', letterSpacing: '-0.01em' }}>
+                    {renderInline(para.replace('### ', ''))}
+                  </h3>
+                );
+              }
+              if (para.startsWith('> ')) {
+                const quoteText = para.split('\n').map(l => l.replace(/^>\s?/, '')).join('\n');
+                return (
+                  <div key={i} style={{ background: 'rgba(30,58,138,0.2)', borderLeft: '4px solid #3B82F6', borderRadius: '0 12px 12px 0', padding: '16px 20px', margin: '24px 0', color: '#E0E7FF', fontSize: '15px', lineHeight: 1.75 }}>
+                    {renderInline(quoteText)}
+                  </div>
+                );
+              }
+              if (para.trim().startsWith('|') && para.includes('\n')) {
+                const rows = para.trim().split('\n').filter(r => r.trim().startsWith('|') && r.trim().endsWith('|'));
+                if (rows.length >= 2) {
+                  const headerCells = rows[0].split('|').slice(1, -1).map(c => c.trim());
+                  const dataRows = rows.slice(1).filter(r => !r.includes('---')).map(r => r.split('|').slice(1, -1).map(c => c.trim()));
+                  return (
+                    <div key={i} style={{ overflowX: 'auto', margin: '28px 0', borderRadius: '12px', border: '1px solid rgba(59,130,246,0.25)', background: 'rgba(15,23,42,0.7)' }}>
+                      <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '14px' }}>
+                        <thead>
+                          <tr style={{ background: 'rgba(30,58,138,0.35)', borderBottom: '1px solid rgba(59,130,246,0.2)' }}>
+                            {headerCells.map((cell, cIdx) => (
+                              <th key={cIdx} style={{ padding: '12px 16px', color: '#93C5FD', fontWeight: 700, fontFamily: 'Space Grotesk, sans-serif' }}>
+                                {renderInline(cell)}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {dataRows.map((row, rIdx) => (
+                            <tr key={rIdx} style={{ borderBottom: rIdx === dataRows.length - 1 ? 'none' : '1px solid rgba(59,130,246,0.1)' }}>
+                              {row.map((cell, cIdx) => (
+                                <td key={cIdx} style={{ padding: '12px 16px', color: '#D1D5DB', lineHeight: 1.6 }}>
+                                  {renderInline(cell)}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  );
+                }
+              }
+
+              const lines = para.split('\n').map(l => l.trim()).filter(Boolean);
+              if (lines.length > 0 && lines.every(l => l.startsWith('- ') || l.startsWith('* '))) {
+                return (
+                  <ul key={i} style={{ margin: '16px 0 20px', paddingLeft: '24px', listStyleType: 'disc' }}>
+                    {lines.map((l, lIdx) => (
+                      <li key={lIdx} style={{ color: '#9CA3AF', fontSize: '15px', lineHeight: 1.8, marginBottom: '8px' }}>
+                        {renderInline(l.replace(/^[-*]\s+/, ''))}
+                      </li>
+                    ))}
+                  </ul>
+                );
+              }
+
               if (para.startsWith('**') && para.endsWith('**')) {
                 return (
                   <p key={i} style={{ color: '#F9FAFB', fontWeight: 700, fontSize: '15px', lineHeight: 1.75, marginBottom: '10px' }}>
-                    {para.replace(/\*\*/g, '')}
+                    {renderInline(para.replace(/\*\*/g, ''))}
                   </p>
                 );
               }
-              const parts = para.split(/(\*\*[^*]+\*\*)/g);
+
               return (
                 <p key={i} style={{ color: '#9CA3AF', fontSize: '15px', lineHeight: 1.85, marginBottom: '16px' }}>
-                  {parts.map((part, j) =>
-                    part.startsWith('**') && part.endsWith('**')
-                      ? <strong key={j} style={{ color: '#D1D5DB', fontWeight: 700 }}>{part.replace(/\*\*/g, '')}</strong>
-                      : <span key={j}>{part}</span>
-                  )}
+                  {renderInline(para)}
                 </p>
               );
             })}

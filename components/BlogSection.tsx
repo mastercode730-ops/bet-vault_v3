@@ -4,7 +4,7 @@ import { blogPosts } from '@/lib/blogData';
 
 export { blogPosts };
 
-const WA = 'https://wa.me/919306604159';
+const WA = 'https://wa.me/918360750829';
 
 export default function BlogSection() {
   return (

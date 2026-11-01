@@ -10,6 +10,120 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'dls-method-explained',
+    tag: 'Cricket Rules',
+    date: 'November 2026',
+    readTime: '6 min read',
+    title: 'DLS Method Explained in Simple Words: How Targets Are Calculated in Rain-Affected Cricket',
+    excerpt: 'There are few events that get a stadium of people scratching their heads more than when rain stops an IPL match. Learn how Duckworth-Lewis-Stern (DLS) calculates revised targets, par scores, and resource percentages in simple words.',
+    content: `There are few events that will get a stadium of people scratching their heads more than when a sudden summer downpour stops the most thrilling match of the season in [IPL cricket](https://betvaultcricket.com/).
+
+Covers are removed, ground staff sweep through the outfield while the stadium video screen updates the revised target which somehow seems to go against the laws of simple arithmetic. A chasing team that needed to score 8 runs per over might suddenly end up required to score 11 in a new calculation. Or it may happen that the total of runs required have actually been reduced, yet the scoring rate requirement has gone up quite a lot.
+
+Certainly, it has been this system generating the numbers that the game has relied on, that of Duckworth-Lewis-Stern (DLS) method, which is based on non-linear mathematical functions at the back but has a very straightforward idea as to why a change in playing conditions would mean a change in a team's required total.
+
+## Why the Old Rain Rules Failed
+
+Understanding the reasons that make cricket a game that uses the DLS method, we might do better to go through what those earlier systems which were not fit for purpose were about:
+
+**Average Run Rate (ARR):** The idea behind what was called the Average Run Rate (ARR) was that if one team in their batting session had made a certain score in a number run rate (i.e. runs / overs), then the second team in their batting session for say 20 overs would need to score only a proportion based on that run rate regardless of how many wickets they have lost or how the scoring has been spread. The most that ARR does is the calculation of a required score solely from the run rate of the first batting side—it totally neglects the wickets. As an illustration, if the side batting first scored a total of 250 in 50 overs (with the batting team getting an average of 5.0 runs per over), then even if the second team, after being dismissed 10 times in 20 overs, needed nothing more that 101, the ARR would not care at all. This led to a strong advantage given to the batting second party, which promoted aggressive, even reckless hitting of the balls in the early stages, especially on the first innings.
+
+**Most Productive Overs (MPO):** Following their introduction in the 1992 Cricket World Cup, the rule called Most Productive Overs (MPO) was aimed at penalizing the side that had given the fewest runs during the lost over(s) in the first eleven overs of the innings. The effect on the game was a disaster at the hands of the very rule designed to do justice and fairness: in the second semifinal match England vs South Africa at Sydney the result of a short delay left South Africa's calculation of what they needed to win reduced from 22 runs off 13 balls to an impossible 21 runs off 1 ball.
+
+The reason both models failed is simple: they saw the game only through overs as a means of scoring, ignoring the other means. In truth, a team on batting has two distinct resources of scoring.
+
+## The Core Concept: Cricket’s Two Resources
+
+A concept born out of the collaboration of English statisticians Frank Duckworth & Anthony Lewis and later modernized by Australian researcher Steven Stern to fit T20 explosive scores of recent years, the DLS system is very straightforward:
+
+A cricketing team at any point in the innings can have only two resources which can help them in scoring: one is the number of overs remaining for the batting and the other is the number of wickets which are intact.
+
+For a team starting an uninterrupted 20-over innings in the IPL, 20 overs and 10 wickets mean that the team has 100% of its resources. With bowling of the balls and fall of wickets as time passes, the level of the resources decreases too.
+
+Having five overs gone when your eleven are intact, i.e., no dismissal, and 10 on your batting, it is quite a common occurrence. It is not devastating as you can still change strategies accordingly.
+
+If five overs have vanished while your bowlers have accounted for seven wickets it is very tough because then you are quite short in terms of scoring.
+
+DLS takes an assessment about what fraction of total resources each team had in their possession in terms of overs and wickets during their innings at a particular point of time. Then, it is used to adjust the target for the second team taking this into account if the second innings is shortened due to interruptions such as bad weather.
+
+## Resource Depletion Example (T20)
+
+- Start (20 Ov / 10 Wkts): 100% Resource Available
+- After 10 Ov (5 Wkts Down): ~45% Resource Remaining
+- After 10 Ov (0 Wkts Down): ~65% Resource Remaining
+
+## How DLS Sets Revised Targets
+
+The fundamental principle is that both teams are compared based on the amount of resource they have been given:
+
+> **Team 2 Target = Team 1 Runs × (Team 2 Resources ÷ Team 1 Resources) + 1**
+
+There are two different scenarios that influence how this works in real-life situations:
+
+### 1. Interruption in the Second Innings (Target Typically Drops)
+
+If Team 1 finishes their innings in 20 overs without interruption, it means they have used up 100 percent of their resources and are left with nothing more. Suppose it starts raining in the match so only after 10 overs of Team 2's innings that a total of 5 overs get lost due to rainfall. After rainfall, Team 2 is left with only 15 total overs of batting. As Team 2 had lesser total resources to start with compared to Team 1, the revised target calculated for them by using the DLS method would naturally be lowered.
+
+### 2. Interruption in the First Innings (Target Frequently Increases)
+
+This situation is most challenging for the fans to understand.
+
+Team 1 is under the belief that they will have 20 overs for their inning. They take a moderate pace, play without losing a wicket.
+
+Suddenly a heavy rainfall at their 12th over leads to an enforced stoppage of the play. After that play is resumed at 14 overs per side for both innings.
+
+By this point Team 1 had no time to finish their 20 overs and, most importantly, they were deprived the chance to play the "death overs" with fully intact batting resources. Hence, their final batting resource was retroactively reduced without them being aware of this and without having had any say in what happened. As a consequence, Team 2 has been allocated higher Target because Team 1's reduced resource level has to be balanced by Team 2 in the DLS equation.
+
+## Scenario Comparison
+
+| Scenario | What Happens to Overs | Impact on Team 2 Target | Why? |
+| :--- | :--- | :--- | :--- |
+| Interruption mid-chase | Team 2 loses remaining overs | Target scales down | Team 2 had fewer resources to work with than Team 1 did. |
+| Interruption during Team 1's innings | Match shortened; Team 1 had preserved wickets | Target scales up (or run rate spikes) | Team 1 paced their innings conservatively without knowing overs would be cut. |
+| Pre-match delay | Both teams start with equal shortened overs | Standard target (no DLS adjustment) | Both teams plan their strategies knowing the exact over allocation from ball one. |
+
+## The Real-World Test: The IPL 2023 Final
+
+The accurate application of DLS happened during the IPL 2023 final in the Narendra Modi Stadium in Ahmedabad.
+
+As the sky was clear and sunny day for, Gujarat Titans chose the batting first option and managed to successfully bat in 20 overs, scoring 214/4. The weather was the reason for the stoppage just three deliveries of Chennai Super Kings’ chase. The game was then resumed after an extended period of delay, and the match officials reduced the chasing run rate and overs to be played by Chennai Super Kings as an 15-over contest.
+
+A simple divisional approach (15/20 of 214) suggested CSK to chase around 161 at least. But DLS acknowledged that having 15 overs while possessing all 10 wickets left gives a considerable tactical advantage—CSK could even bat aggressively on the very first ball. For that reason, DLS fixed the new target of 171 runs in 15 overs (which would call for a run rate of 11.40). CSK completed the run chase with the very last ball.
+
+To a spectator, resource percentage is an informative detail that shows why par scores change delivery by delivery on real-time updates. The information would be handy if the spectator was a fantasy tracker following live fast-paced scenarios via mobile apps or platform accounts like a verified [Tiger365 id](https://betvaultcricket.com/).
+
+## What Is a "Par Score"?
+
+A "Par Score" is the DLS score displayed on screen when rain threatens during the second innings of a cricket match. If, for instance, you are chasing a team and only reach the DLS "Par Score" after a specific number of deliveries, then it is said you have a chance. This means if rain stops play permanently, the match would be considered tied between the two teams, if only their total scores are equal.
+
+If both teams play a minimum of 5 overs, which is the case when a match is abandoned, the team that is on a higher run total wins.
+
+If a chasing team loses more than 2 wickets at any given time before the weather turns cloudy, their par score requirement will increase automatically, because their remaining resources have been completely used up and the only way for them to win is to chase the par score set by the DLS.
+
+## Frequently Asked Questions
+
+**What is the minimum number of overs required for a DLS result in IPL cricket?**  
+In the case of an IPL and a T20 international match, both teams have to play at least 5 overs for the DLS to give a result. If the game is stopped permanently while the chasing team has batted less than 5 overs, then the match outcome is "No Results".
+
+**Why did DLS replace the original Duckworth-Lewis (DL) method?**  
+The DL method originally depended on history-based scoring trends. When T20 introduced a higher scoring pattern and the run-scoring in the final overs, a scenario that the DL model could not predict or even consider came about. In 2014, Steven Stern re-calculated the figures to fit the new pattern of runs and the faster death-overs phase in cricket thereby causing the international cricket community to change to DLS officially.
+
+**Can the DLS target be calculated manually with a pocket calculator?**  
+No, the accuracy of such a match will be compromised. Initially, it was allowed to use the "Standard Edition" version of DL method and there were some resource tables published and even used in the process, but now the so-called "Professional Edition" is only available online and run by some non-linear ICC proprietary computer application that is the sole means of changing variable calculation in the DLS method.
+
+**Does DLS favor the team batting first or second?**  
+The DLS method, as far as the ICC's statistical analysis is concerned, is not biased. But at any rate there can be advantages in certain circumstances, for example a chasing team knows the weather forecast and they score the runs in such a way that they always get a little ahead of the par score so there will be no delay in the match even if rain comes.
+
+**Does the DLS method take individual player quality into account?**  
+DLS does not consider this factor. For example, the loss of the top order batsman's wicket decreases the resource available as a percentage the same as any other. A wicket lost in the early overs is of the same nature as a loss in wicket later on. DLS does not account for this, it sees all losses of wickets equally.
+
+## The Takeaway
+
+The Duckworth-Lewis-Stern method is not a method of predicting the results of a match but a measure that calculates the resources available to a team in a situation where the match is not completed due to adverse weather conditions.
+
+DLS is a statistical method which is fair and widely accepted that the teams can agree to after a rain affected match to share the same result. While it's not the perfect replacement for a full game when it rains, it's probably the best statistical method developed by cricket science till date to settle rain interruptions fairly.`,
+  },
+  {
     slug: 'betvaultcricket-guide',
     tag: 'Cricket Guide',
     date: 'September 2026',

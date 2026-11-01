@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const WA = 'https://wa.me/919306604159';
+const WA = 'https://wa.me/918360750829';
 
 const quickLinks = [
   { label: 'Home',         href: '#hero'         },
@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'DLS Method Explained',       href: '/blog/dls-method-explained'                 },
   { label: 'IPL Betting Guide 2026',     href: '/blog/ipl-betting-guide-2026'               },
   { label: 'Choosing a Safe Platform',   href: '/blog/how-to-choose-safe-betting-platform'   },
   { label: 'Top Betting Strategies',     href: '/blog/cricket-betting-strategies-that-work'  },
@@ -50,7 +51,7 @@ export default function Footer() {
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className="whatsapp-btn"
               style={{ padding: '11px 22px', borderRadius: '999px', fontSize: '13px', fontWeight: 700, display: 'inline-flex' }}>
-              <WaIcon /> &nbsp;WhatsApp: +91 93066 04159
+              <WaIcon /> &nbsp;WhatsApp: +91 83607 50829
             </a>
           </div>
 
@@ -94,7 +95,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <div style={{ color: '#F9FAFB', fontSize: '13px', fontWeight: 600 }}>WhatsApp</div>
-                  <div style={{ color: '#6B7280', fontSize: '12px' }}>+91 93066 04159</div>
+                  <div style={{ color: '#6B7280', fontSize: '12px' }}>+91 83607 50829</div>
                 </div>
               </a>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
