@@ -10,6 +10,104 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'powerplay-death-overs-strategic-timeout-rules',
+    tag: 'Cricket Rules',
+    date: 'November 2026',
+    readTime: '6 min read',
+    title: 'Master Guide to Cricket Phases: Powerplay, Strategic Timeout, and Death Overs Explained',
+    excerpt: 'Today’s limited-overs game is defined by strategic phases. Discover how Powerplay fielding restrictions, IPL Strategic Timeouts, and high-pressure Death Overs tactics govern white-ball cricket under standard ICC and IPL rules.',
+    content: `Today’s limited overs game has a rigid pace change structure, mathematical limitations in field settings, and tactical pauses. A white-ball game does not depend on a single ball but wins or loses in particular phases where captains, batsmen, and analysts continuously make calculations regarding their risk and rewards.
+
+For a cricket analyst analyzing game trends and a fan monitoring live game action through a [online cricket id](https://betvaultcricket.com/), knowledge about the official rule book of Powerplays, Strategic Pauses, and Death Overs is crucial. Here is a complete guide to the phases and how they function under standard ICC rules and IPL specific rules.
+
+## 1. The Powerplay: Rules and Field Restrictions
+
+The Powerplay is a particular time period during which the fielding captain will be limited to specific field setting restrictions to promote aggressive batting.
+
+### T20 International and League Powerplays (Overs 1-6)
+
+In a normal, continuous 20 over innings:
+
+- **Duration:** The first 6 overs (Overs 0.1 to 6.0) make up the Powerplay.
+- **Inner Ring Restriction:** There is a fielding circle (a 30-yard circle drawn on the ground around the pitch). Maximum two fielders can stand outside the 30-yard circle during overs 1 to 6.
+- **Non-Powerplay Phase (Overs 7–20):** After the sixth over, a maximum of five fielders are allowed to play outside the inner ring.
+- **Rain-Affected Reductions:** If there is a delay in the game resulting in the innings being shorter, the duration of Powerplay is mathematically reduced. For instance, in case of a 10-over match, Powerplay would be reduced to 3 overs.
+
+### One-Day International (ODI) Three-Tier System
+
+Unlike T20s, the ICC 50-over format employs three sequential field-restriction phases:
+
+| Phase | Over Span | Fielders Allowed Outside 30-Yard Circle |
+| :--- | :--- | :--- |
+| P1: Mandatory Powerplay | Overs 1 to 10 | Maximum 2 fielders |
+| P2: Middle Overs | Overs 11 to 40 | Maximum 4 fielders |
+| P3: Batting/Death Powerplay | Overs 41 to 50 | Maximum 5 fielders |
+
+The tactical mandate of P1 is clear: opening batters exploit the boundary riders with aerial shots over mid-on, mid-off, and backward point, while new-ball pacers hunt early wickets via slips and catching covers before the outfield opens up.
+
+## 2. The Strategic Time-Out: IPL Rules and Application
+
+Whereas ICC lacks the use of commercial timeouts in normal T20Is (using 85 second change of innings or regular beverage breaks), in domestic franchise leagues, particularly the Indian Premier League (IPL), there is an existence of a Strategic Time-out.
+
+### Official Timeouts in IPL
+
+- **Time Allotted:** The time allowed for each Strategic Timeout is 2 minutes 30 seconds.
+- **Timeouts per Innings:** There are two timeouts per innings (four per game).
+- **Window for Bowling Side:** The timeout has to be taken during the 6th, 7th, 8th, or 9th over.
+- **Window for Batting Side:** The timeout has to be taken during the 13th, 14th, 15th, or 16th over.
+- **Process:** The onfield captain/batter has to indicate the intention of taking the timeout to the standing umpire. In case there is no nomination of a timeout by either side till the last over of the window (either over 9 or 16), then the umpires will automatically call the timeout.
+
+### Strategic Timeout Impact
+
+The strategic timeout is not only a commercial timeout, but it acts as a strategic tactical window:
+
+- **Disruption of Momentum:** Captains often request a timeout after an over that has many boundaries to interrupt the flow of the batting team and re-strategize.
+- **Strategic Realignment Using Data:** Team analysts and the coach join the players in the ground for match-up, economy rate, and ball-tracking strategies.
+- **Controlling Run Rate in Run Chases:** For those who watch matches via online betting platforms such as [Betvault Cricket](https://betvaultcricket.com/), strategic timeouts become the key points at which the run rate either increases or decreases dramatically.
+
+## 3. The Death Overs: Mechanics, Psychology, and Rules
+
+The "Death Overs" form the last part of the inning—normally referred to as Overs 16 to 20 in T20s and Overs 41 to 50 in ODIs. Although not a separate official playing condition title in the ICC rule book, specific rules heavily govern this high-pressure phase.
+
+### The Playing Conditions That Affect the Death Overs
+
+- **Outer-Ring Maximums:** In a T20, the maximum number of boundary fielders that a bowling side can use is five. If the fielding team is lagging in terms of over-rate (Clause 13.8 of standard T20 conditions), a penalty is imposed in the form of bringing an extra fielder inside the 30-yard circle for each over after the cut-off time.
+- **Short-Pitch Maximums:** According to standard ICC T20 rules, there can be one short-pitched ball above shoulder height per over. However, in tournaments such as IPL, the playing conditions allow two short pitches per over.
+- **Strict Guidelines for Wide Balls:** Umpires apply strict guidelines for the off stump and leg stump tramlines during the death overs when a negative bowling line is played beyond the reach of the batter.
+
+### Tactical Approach: Batting Against Bowling
+
+- **Bowling Tactics:** Bowlers depend on execute-or-concede deliveries: wide yorkers that do not provide any leverage, reverse swinging toe-crushers, knuckle balls, and back-of-the-hand slower deliveries.
+- **Batsmen's Tactics:** Batsmen leave behind classical technique and opt for pre-planned innovations—ramp shots, depth of crease against yorkers, clearing the front leg, and targeting shorter boundary dimensions.
+
+## Comparative Summary of Key Phases
+
+| Phase | Over Range (T20) | Primary Field Restriction | Key Tactical Objective |
+| :--- | :--- | :--- | :--- |
+| Powerplay | Overs 1–6 | 2 fielders outside ring | Maximize boundary percentage; take early top-order wickets |
+| Middle Overs | Overs 7–15 | 5 fielders outside ring | Strike rotation, spin choke, building partnerships |
+| Strategic Window | Overs 6–9 & 13–16 | Fixed 2:30 break | Reset tactical matchups; calculate target chase rates |
+| Death Overs | Overs 16–20 | 5 fielders outside (4 if over-rate delayed) | Maximizing boundary rate; death yorkers and boundary denial |
+
+## Frequently Asked Questions (FAQs)
+
+**How does the Powerplay change if rain disrupts a T20 game?**  
+The Powerplay reduces proportionately if there is an interruption due to rain and the overs are reduced before the innings starts according to ICC playing tables. An 8-to-9 over innings has a 2-over Powerplay, while a 15-over innings gets a 4-over Powerplay.
+
+**Can a team miss its Strategic Timeout in the IPL?**  
+No. A Strategic Timeout is mandatory as per the IPL Playing Conditions. If the captain does not indicate to the umpires their intention before the window lapses, the standing umpires announce the strategic timeout at the end of the 9th over (bowling team) and 16th over (batting team).
+
+**What are the consequences when a team fails to finish overs in the required time before death overs?**  
+If the bowling team fails to deliver the first ball of the last over within the official time limit of the innings, it is sanctioned according to the ICC slow over-rate rule. One fielder from the outfield has to be brought inside the 30-yard circle for all overs that remain in the innings.
+
+**What is the benefit of having a cricket ID on the internet in relation to match phases?**  
+An online cricket ID gives the user the ability to log in and get detailed real-time information about ball-by-ball developments, phase-by-phase run rates, and shifts in tactics.
+
+## The Takeaway
+
+Understanding how field restrictions impact the Powerplay, how timeouts define the reset during the match, and how execution influences death overs gives you a completely new perspective on every limited-overs match. Next time your innings switches gears, the statistics on the field will inform you of exactly what is going on.`,
+  },
+  {
     slug: 'dls-method-explained',
     tag: 'Cricket Rules',
     date: 'November 2026',

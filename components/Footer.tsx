@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'Cricket Phases & Rules',     href: '/powerplay-death-overs-strategic-timeout-rules' },
   { label: 'DLS Method Explained',       href: '/blog/dls-method-explained'                 },
   { label: 'IPL Betting Guide 2026',     href: '/blog/ipl-betting-guide-2026'               },
   { label: 'Choosing a Safe Platform',   href: '/blog/how-to-choose-safe-betting-platform'   },
