@@ -34,6 +34,11 @@ export default function BlogSection() {
               <div style={{ height: '4px', background: i % 2 === 0 ? 'linear-gradient(90deg,#3B82F6,#60A5FA)' : 'linear-gradient(90deg,#F59E0B,#FCD34D)', flexShrink: 0 }} />
 
               <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
+                {post.image && (
+                  <div style={{ margin: '-24px -24px 8px -24px', height: '140px', overflow: 'hidden', background: '#0D1424' }}>
+                    <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  </div>
+                )}
                 {/* Meta */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                   <span className="blog-tag">{post.tag}</span>

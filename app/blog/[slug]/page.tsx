@@ -10,7 +10,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) return { title: 'Post Not Found' };
-  return { title: `${post.title} | Bet Vault Blog`, description: post.excerpt };
+  return {
+    title: `${post.title} | Bet Vault Blog`,
+    description: post.excerpt,
+    openGraph: post.image ? { images: [post.image] } : undefined,
+  };
 }
 
 const WA = 'https://wa.me/918360750829';
@@ -121,6 +125,27 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="container-v3" style={{ maxWidth: '800px', paddingTop: '48px' }}>
           <article>
             {paragraphs.map((para, i) => {
+              const imgMatch = para.trim().match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+              if (imgMatch) {
+                const [, alt, src] = imgMatch;
+                return (
+                  <figure key={i} style={{ margin: '32px 0', textAlign: 'center' }}>
+                    <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(59,130,246,0.25)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)', background: '#111827' }}>
+                      <img
+                        src={src}
+                        alt={alt || post.title}
+                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                        loading="lazy"
+                      />
+                    </div>
+                    {alt && (
+                      <figcaption style={{ color: '#9CA3AF', fontSize: '13px', marginTop: '10px', fontStyle: 'italic' }}>
+                        {alt}
+                      </figcaption>
+                    )}
+                  </figure>
+                );
+              }
               if (para.startsWith('## ')) {
                 return (
                   <h2 key={i} style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', color: '#60A5FA', marginTop: '36px', marginBottom: '14px', letterSpacing: '-0.01em' }}>

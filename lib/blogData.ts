@@ -6,6 +6,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
+  image?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -16,9 +17,12 @@ export const blogPosts: BlogPost[] = [
     readTime: '6 min read',
     title: 'Master Guide to Cricket Phases: Powerplay, Strategic Timeout, and Death Overs Explained',
     excerpt: 'Today’s limited-overs game is defined by strategic phases. Discover how Powerplay fielding restrictions, IPL Strategic Timeouts, and high-pressure Death Overs tactics govern white-ball cricket under standard ICC and IPL rules.',
+    image: '/blog/cricket-phases-guide.jpg',
     content: `Today’s limited overs game has a rigid pace change structure, mathematical limitations in field settings, and tactical pauses. A white-ball game does not depend on a single ball but wins or loses in particular phases where captains, batsmen, and analysts continuously make calculations regarding their risk and rewards.
 
 For a cricket analyst analyzing game trends and a fan monitoring live game action through a [online cricket id](https://betvaultcricket.com/), knowledge about the official rule book of Powerplays, Strategic Pauses, and Death Overs is crucial. Here is a complete guide to the phases and how they function under standard ICC rules and IPL specific rules.
+
+![Master Guide to Cricket Phases: Powerplay, Strategic Timeout, and Death Overs Explained](/blog/cricket-phases-guide.jpg)
 
 ## 1. The Powerplay: Rules and Field Restrictions
 
