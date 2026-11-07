@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'Cricket Pitch Types Guide',  href: '/cricket-pitch-types-match-results-guide'   },
   { label: 'Cricket Phases & Rules',     href: '/powerplay-death-overs-strategic-timeout-rules' },
   { label: 'DLS Method Explained',       href: '/blog/dls-method-explained'                 },
   { label: 'IPL Betting Guide 2026',     href: '/blog/ipl-betting-guide-2026'               },
