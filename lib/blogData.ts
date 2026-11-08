@@ -11,6 +11,102 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 't20-cricket-rules-for-beginners',
+    tag: 'Beginner Guide',
+    date: 'November 2026',
+    readTime: '7 min read',
+    title: 'T20 Cricket Rules Explained: The Complete Beginner’s Guide to the Twenty20 Game',
+    excerpt: 'Understand the high-intensity world of Twenty20 cricket. From 20-over innings limits and Powerplay field restrictions to Free Hits, IPL Impact Player innovations, and Super Over tie-breakers, here is your definitive beginner’s guide.',
+    image: '/blog/t20-cricket-rules-guide.jpg',
+    content: `The game of Twenty20 cricket has shifted the dynamics of bat versus ball battles with the conventional cricket game being put into a tight time limit of three hours. Formally introduced in England at the professional county level in 2003 and taken up by the International Cricket Council (ICC) globally in 2005, the game of Twenty20 cricket does not follow the slow pace of the test match but follows aggressive batting, restrictive fielding, and tactical quick decision making.
+
+In case anyone tunes in to any tournament or watches the annual event of [IPL cricket](https://betvaultcricket.com/), knowledge about the basic framework of the game will make any tactical movement of the field, rotation of bowlers, and chasing runs very understandable.
+
+![T20 Cricket Rules Explained: The Complete Beginner’s Guide to the Twenty20 Game](/blog/t20-cricket-rules-guide.jpg)
+
+## 1. The Basic Framework: Overs, Innings, and Match Durations
+
+Basic laws of T20 Cricket that are based on MCC Laws of Cricket and ICC Playing Conditions involve two teams of 11 players playing the game for two innings.
+
+- **Duration Per Innings:** An innings consists of 20 overs (maximum 120 legal deliveries) or is concluded when all 10 wickets are lost by the batting team.
+- **Maximum Overs Bowled by a Single Bowler:** For a continuous inning of 20 overs, no single bowler shall bowl more than one-fifth of the total number of overs, that is, up to a maximum of 4 overs for each bowler. In case there are 15 overs in a rain-shortened match, the maximum number of overs will reduce to 3 overs per bowler.
+- **Match Duration and Cut-Off Times:** According to ICC and IPL playing conditions, each 20-over innings should not take more than 85 minutes to complete. Those teams that do not bowl their last over by cut-off times are liable for on-field fielding penalties and fines.
+
+## 2. Powerplays and Field Restrictions
+
+Field restrictions deny the defensive captain the ability to put all outfielders near the boundary ropes. This results in aggressive batting and dynamic field placement.
+
+The cricket ground is divided into an inner fielding circle of 30 yards and an outer boundary area.
+
+| Match Phase | Overs | Minimum Inside 30-Yard Circle | Maximum Outside 30-Yard Circle |
+| :--- | :--- | :--- | :--- |
+| Mandatory Powerplay | Overs 1 to 6 | 9 players (Bowler + Keeper + 7 fielders) | Maximum 2 fielders |
+| Non-Powerplay Overs | Overs 7 to 20 | 4 fielders (plus Bowler & Keeper) | Maximum 5 fielders |
+
+In the initial six overs (Mandatory Powerplay), the batsmen generally hit the ball over the infield, utilizing the open outfield to score quick boundaries. Once over seven starts, fielding captains have the option of placing up to five fielders on the boundary rope to protect boundary areas and control the scoring rate.
+
+## 3. The Free Hit: Punishment for Illegal Deliveries
+
+If at any time a bowler delivers a no-ball—either by overstepping the bowling popping crease or delivering a waist-high full-toss above the waist of the upright batter—the batting team earns one penalty run, and the next legal delivery becomes an official Free Hit.
+
+### Key Rules During a Free Hit
+
+- **Immunity from Standard Dismissals:** The batsman cannot be dismissed by standard bowling dismissals, such as Bowled, Caught, Leg Before Wicket (LBW), or Stumped.
+- **Permissible Dismissals:** A batsman can only be dismissed via non-bowler methods: Run Out, Hit the Ball Twice, or Obstructing the Field.
+- **Locked Field Setting:** The fielding captain cannot alter the field setting for the free-hit delivery unless there was a change of strike between the batters on the no-ball delivery.
+- **Wide Deliveries:** Wide balls (pitched out of reach or down the leg side) concede one penalty run and must be re-bowled, but they do not trigger a Free Hit.
+
+## 4. The Process of Dismissals in Twenty20 Cricket
+
+A batter tries to score runs quickly; however, losing a wicket is devastating, as batting resources drop and lower-order batters find themselves under intense scoring pressure. The primary methods of dismissal in T20 cricket include:
+
+- **Bowled:** When a delivery hits the wickets and knocks off at least one bail.
+- **Caught:** When the batter hits the ball and a fielder catches it cleanly before it touches the turf.
+- **Leg Before Wicket (LBW):** The delivery strikes the batter's pad or body in line with the wickets when it would have gone on to hit the stumps.
+- **Run Out:** When a fielder breaks the stumps with the ball while the batter is outside their popping crease during a run attempt.
+- **Stumped:** When the batter advances out of their crease, misses the ball, and the wicketkeeper dislodges the bails before the batter regains ground behind the popping crease.
+
+## 5. IPL-Based Inventions versus Standard ICC Regulations
+
+While the International Cricket Council establishes standard rules for international bilateral games and World Cup competitions, premier franchise leagues such as the Indian Premier League adopt distinct playing conditions that foster higher tactical competition:
+
+- **The Impact Player Rule:** While 11 named players get an opportunity to bat and bowl in standard international T20s, in IPL cricket, five substitutes are nominated at the toss and one "Impact Player" can be introduced at any natural break (a wicket falling, between overs, or innings breaks) to bat or bowl.
+- **Wide and No-Ball DRS Reviews:** Under ICC laws, the Decision Review System (DRS) is reserved exclusively for dismissals. Within the IPL, teams have the option of challenging on-field umpire wide-ball and waist-high no-ball decisions using their two DRS reviews per innings.
+- **Two Bouncers Per Over:** According to ICC T20 Laws, bowlers are restricted to only one short-pitched delivery above shoulder height per over. In the IPL, fast bowlers are permitted two bouncers per over, providing an extra tactical weapon against power hitters.
+
+Fans who look for analytics in [BetVault Cricket](https://betvaultcricket.com/) while preparing for a [cricket id online bet](https://betvaultcricket.com/) keep an eye on these specific venue and league rules, especially when analyzing momentum shifts and live match scenarios.
+
+## 6. Tie Breakers: The Super Over Rules
+
+A professional T20 match cannot end in a tie. If both teams finish with identical scores at the end of their respective 20 overs, a Super Over tie-breaker immediately follows:
+
+- **Nomination:** Each team nominates three designated batters and one bowler.
+- **Duration:** The Super Over consists of 1 over (6 legal deliveries) or terminates early if the fielding team takes two wickets.
+- **Batting Order:** The team that batted second in the main match bats first in the Super Over.
+- **Multiple Super Overs:** If scores remain tied after the first Super Over, successive Super Overs are played until a clear winner emerges (replacing the former boundary countback rule).
+
+## Frequently Asked Questions (FAQs)
+
+**What happens if rain disrupts a T20 match?**  
+Both teams must bat for a minimum of 5 overs each for an official result to be declared. If play resumes with reduced overs, the Duckworth-Lewis-Stern (DLS) mathematical method calculates the revised target for the chasing team.
+
+**What is the fielding penalty for a slow over rate in T20s?**  
+If the fielding side fails to start bowling the final (20th) over by the scheduled cut-off time, an on-field penalty is applied immediately: one additional fielder must be brought inside the 30-yard circle for the remaining overs, leaving only four boundary riders instead of five.
+
+**Can a bowler switch ends during a match?**  
+Yes. A bowler can bowl from different ends during an innings, but they cannot bowl two consecutive overs. Another bowler must deliver at least one over from the opposite end between spells.
+
+**Does a leg bye add to the individual score of the batsman?**  
+No. If the ball deflects off the batter's pads or protective equipment while attempting a legitimate shot, the runs are recorded as "Leg Byes." These count toward the total team score and extras, but not the individual batter's total.
+
+**How does the Decision Review System (DRS) function in T20 cricket?**  
+Each team is allotted two unsuccessful reviews per innings. If tracking shows the on-field decision stands or is deemed "Umpire's Call," the review is either lost or retained according to ICC playing protocols. Third umpires use synchronized ultra-edge audio detection, ball tracking, and high-frame-rate cameras to adjudicate reviews.
+
+## The Takeaway: Mastering Twenty20 Cricket
+
+Twenty20 cricket combines mathematical strategy with explosive athleticism. Understanding over allowances, the strategic advantage of Powerplays and Free Hits, and the nuances of tie-breakers provides a clear framework for analyzing every phase of the contest.`,
+  },
+  {
     slug: 'cricket-pitch-types-match-results-guide',
     tag: 'Pitch Report',
     date: 'November 2026',
