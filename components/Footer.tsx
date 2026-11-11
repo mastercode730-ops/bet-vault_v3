@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'Cricket Run Rate Guide',     href: '/run-rate-calculator-cricket-nrr-guide'     },
   { label: 'T20 Cricket Rules Guide',    href: '/t20-cricket-rules-for-beginners'           },
   { label: 'Cricket Pitch Types Guide',  href: '/cricket-pitch-types-match-results-guide'   },
   { label: 'Cricket Phases & Rules',     href: '/powerplay-death-overs-strategic-timeout-rules' },

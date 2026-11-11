@@ -11,6 +11,133 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'run-rate-calculator-cricket-nrr-guide',
+    tag: 'Cricket Calculator',
+    date: 'November 2026',
+    readTime: '6 min read',
+    title: 'Cricket Run Rate Calculator: How to Calculate CRR, RRR, and Net Run Rate',
+    excerpt: 'Master the mathematics of cricket. Learn the exact formulas and steps to calculate Current Run Rate (CRR), Required Run Rate (RRR), and Net Run Rate (NRR), plus ICC all-out tie-breaker rules and qualification scenarios.',
+    content: `In such a heated tournament like the Indian Premier League or any ICC World Cup, one digit after the decimal often decides which team progresses to the playoff stage. While boundaries scored and wickets taken make the headlines, qualification tables are driven by three fundamental numbers: CRR, RRR, and NRR.
+
+With proper knowledge of the mathematical calculations behind them, fans and analysts can evaluate match situations in real time. For sports researchers and analytical enthusiasts who follow matches through an [online cricket id](https://betvaultcricket.com/), learning the math behind the match elevates the entire viewing experience.
+
+## 1. What Is Run Rate and Why Does It Matter?
+
+Run rate is the average number of runs scored by a batting team per legal over bowled. In limited-overs formats (ODIs and T20s), run rate provides a benchmark against par scores and chase equations.
+
+One over consists of 6 legal deliveries. To calculate run rates mathematically, deliveries within an incomplete over must be converted into decimal fractions of an over:
+
+- **1 ball** = 1/6 of an over = **0.1667 overs** (written on scorecards as 0.1)
+- **2 balls** = 2/6 of an over = **0.3333 overs** (written on scorecards as 0.2)
+- **3 balls** = 3/6 of an over = **0.5000 overs** (written on scorecards as 0.3)
+- **4 balls** = 4/6 of an over = **0.6667 overs** (written on scorecards as 0.4)
+- **5 balls** = 5/6 of an over = **0.8333 overs** (written on scorecards as 0.5)
+
+> **Common Beginner Mistake:** Confusing cricket scorecard notation (e.g., 14.3 overs) with straight decimal notation (14.3). In a rate formula, 14 overs and 3 balls is **14.5 overs** (14 + 3/6), not 14.3!
+
+## 2. Current Run Rate (CRR) Formula & Calculation
+
+The Current Run Rate (CRR) reflects the scoring tempo of an active innings at any given moment.
+
+> **CRR Formula:**  
+> **CRR = Total Runs Scored ÷ Total Overs Bowled (in decimals)**
+
+### Practical Example
+
+Suppose a team is batting in an ODI and has reached 182 runs after 34.4 overs:
+
+1. **Convert overs to decimal:** 34 completed overs + (4 balls ÷ 6) = 34 + 0.6667 = **34.6667 overs**.
+2. **Apply the formula:** CRR = 182 ÷ 34.6667 ≈ **5.25 runs per over**.
+
+## 3. Required Run Rate (RRR) Formula & Chase Dynamics
+
+The Required Run Rate (RRR) applies to the team batting second. It indicates the exact scoring rate per over required to reach the target within the remaining deliveries.
+
+> **RRR Formula:**  
+> **RRR = Runs Needed to Win ÷ Overs Remaining (in decimals)**
+
+### Practical Example
+
+In a T20 chase, Team A scores 178 in their 20 overs. Team B needs 179 to win. At the end of the 15th over, Team B has reached 128:
+
+1. **Runs required:** 179 - 128 = **51 runs**.
+2. **Overs remaining:** 20 - 15 = **5 overs**.
+3. **Calculate RRR:** RRR = 51 ÷ 5 = **10.20 runs per over**.
+
+Assuming Team B loses two wickets and manages only 4 runs in the 16th over, they now need 47 runs in 4 overs, causing the RRR to surge to **11.75**. Sudden spikes in RRR drive match pressure and dictate tactical decision-making on sports analytics portals with an [online betting id](https://betvaultcricket.com/).
+
+## 4. Net Run Rate (NRR): The Tournament Tie-Breaker
+
+When two or more teams finish level on match points at the end of a league or group stage, Net Run Rate (NRR) serves as the primary tie-breaker under ICC, BCCI, and IPL regulations.
+
+NRR evaluates a team's overall tournament efficiency by measuring the difference between its average batting scoring rate and its average bowling concession rate across all matches.
+
+> **Net Run Rate Formula:**  
+> **NRR = (Total Runs Scored ÷ Total Overs Faced) − (Total Runs Conceded ÷ Total Overs Bowled)**
+
+### Official ICC Rules for NRR Calculations
+
+- **The "All-Out" Rule (ICC Standard Clause 16.10):** If a team is bowled out before completing its allotted overs, the overs faced are taken as the full theoretical allocation (20.0 for T20, 50.0 for ODI) rather than the actual over in which the 10th wicket fell.
+- **Rain-Interrupted Matches (DLS Adjustment):** For matches shortened where a revised target is set via the Duckworth-Lewis-Stern method, Team 1's runs are credited as Team 2's revised target minus 1 run, over Team 2's revised over allocation.
+- **Abandoned Matches:** Matches that end in "No Result" without reaching the minimum overs threshold are completely excluded from cumulative NRR calculations.
+
+### NRR Calculation Walkthrough
+
+Consider a two-match tournament sample:
+
+| Match | Batting Performance | Bowling Performance |
+| :--- | :--- | :--- |
+| Match 1 | Scored 160/6 in 20.0 overs | Bowled out opponent for 120 in 17.2 overs |
+| Match 2 | Scored 145/8 in 20.0 overs | Opponent chased 146/4 in 18.4 overs |
+
+#### Step 1: Calculate Batting Run Rate
+- Total runs scored: 160 + 145 = **305 runs**
+- Overs faced: 20.0 + 20.0 = **40.0 overs**
+- **Team Batting Rate:** 305 ÷ 40.0 = **7.625**
+
+#### Step 2: Calculate Bowling Run Rate
+- In Match 1, the opponent was bowled out in 17.2 overs. Under the All-Out Rule, overs counted = **20.0 overs**.
+- In Match 2, the opponent batted 18.4 overs. Convert 4 balls to decimal: 18 + (4 ÷ 6) = **18.667 overs**.
+- Total runs conceded: 120 + 146 = **266 runs**
+- Total overs bowled: 20.0 + 18.667 = **38.667 overs**
+- **Team Bowling Rate:** 266 ÷ 38.667 = **6.879**
+
+#### Step 3: Compute Net Run Rate
+**NRR = 7.625 − 6.879 = +0.746**
+
+A positive NRR (+0.746) confirms that the team scores faster on average than it concedes throughout the tournament.
+
+## 5. Qualification Scenarios and Margin Calculations
+
+When teams approach the final round of group stages needing a specific NRR boost to qualify, analysts calculate two boundary scenarios:
+
+- **Batting First (Defending Margin):** Calculating the maximum runs a team can afford to concede in the 20 overs, or the exact over limit by which they must bowl out the opponent, to maintain a target NRR.
+- **Batting Second (Chasing Margin):** Calculating the maximum number of balls permitted to chase down the opponent's total in order to elevate the cumulative run rate above a rival's threshold.
+
+For enthusiasts analyzing matches with an [online betting id](https://betvaultcricket.com/), run rate equations define the exact tipping point where a chasing side pivots from merely winning the match to securing qualification.
+
+## Frequently Asked Questions (FAQs)
+
+**How is run rate calculated if an over is interrupted by rain?**  
+Incomplete overs are converted to decimal by dividing the legal deliveries by six. If play stops after 12.3 overs, the overs faced equal 12 + 3/6 = 12.5 overs. Total runs are then divided by 12.5.
+
+**Are Super Over runs counted in tournament NRR?**  
+No. Under ICC and IPL playing conditions, runs scored and conceded during a Super Over tie-breaker are excluded from all cumulative tournament statistics and NRR calculations.
+
+**What is the difference between Run Rate and Strike Rate?**  
+Run rate measures runs scored by a team per 6-ball over. Batting strike rate measures runs scored by an individual batter per 100 deliveries faced. Bowling strike rate measures how many balls a bowler delivers per wicket taken.
+
+**Why does a team's NRR sometimes fall after winning a match?**  
+If a team enters a match with a high positive NRR and wins a narrow, low-scoring thriller in the final over, that individual match's run rate may be lower than the team's tournament average, slightly decreasing its cumulative NRR.
+
+**What effect does being bowled all out have on a team's run rate?**  
+In a single-match CRR, run rate reflects runs divided by actual overs played. However, in cumulative tournament NRR calculations, the all-out rule mandates that the full over quota (20 overs in T20s, 50 overs in ODIs) is charged against the dismissed team.
+
+## The Takeaway: Precision Behind the Numbers
+
+Run rates remove guesswork from cricket strategy. Whether evaluating in-game chase tempo with CRR and RRR or tracking qualification battles through Net Run Rate, mastering these mathematical formulas provides complete clarity on every tactical phase of the game.`,
+  },
+  {
     slug: 't20-cricket-rules-for-beginners',
     tag: 'Beginner Guide',
     date: 'November 2026',

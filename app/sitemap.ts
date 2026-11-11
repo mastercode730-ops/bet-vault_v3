@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/run-rate-calculator-cricket-nrr-guide`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/t20-cricket-rules-for-beginners`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
