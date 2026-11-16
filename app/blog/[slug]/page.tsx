@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { blogPosts } from '@/lib/blogData';
 import { notFound } from 'next/navigation';
 import RunRateCalculator from '@/components/RunRateCalculator';
+import StrikeRateAverageCalculator from '@/components/StrikeRateAverageCalculator';
 
 export async function generateStaticParams() {
   return blogPosts.map(p => ({ slug: p.slug }));
@@ -127,6 +128,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <article>
             {slug === 'run-rate-calculator-cricket-nrr-guide' && (
               <RunRateCalculator />
+            )}
+            {slug === 'cricket-strike-rate-and-average-calculator-ipl-guide' && (
+              <StrikeRateAverageCalculator />
             )}
             {paragraphs.map((para, i) => {
               const imgMatch = para.trim().match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
