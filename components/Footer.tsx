@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'How NRR is Calculated',     href: '/how-net-run-rate-is-calculated-with-examples' },
   { label: 'Strike Rate & Average Guide', href: '/cricket-strike-rate-and-average-calculator-ipl-guide' },
   { label: 'Cricket Run Rate Guide',     href: '/run-rate-calculator-cricket-nrr-guide'     },
   { label: 'T20 Cricket Rules Guide',    href: '/t20-cricket-rules-for-beginners'           },

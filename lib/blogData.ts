@@ -11,6 +11,152 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'how-net-run-rate-is-calculated-with-examples',
+    tag: 'Cricket Analytics',
+    date: 'November 2026',
+    readTime: '7 min read',
+    title: 'How Net Run Rate Is Calculated in Cricket: Complete Formula, Edge Cases, and Examples',
+    excerpt: 'Master how Net Run Rate (NRR) is calculated in the IPL and ICC World Cups. Learn the cumulative tournament formula, decimal ball conversions, the all-out rule, DLS adjustments, and worked match examples.',
+    image: '/blog/how-net-run-rate-is-calculated.jpg',
+    content: `Each year in May, the IPL points table becomes a real-life spreadsheet exercise. There are always two or three teams level on 14 or 16 points, and a single boundary hit in the 19th over or an early wicket in the powerplay determines which of them advances to the playoffs. The decisive factor that separates the contenders is the Net Run Rate (NRR).
+
+Even though Net Run Rate is highlighted in every broadcast graphic during ICC World Cups and IPL seasons, it is frequently misunderstood. Fans often assume it is simply the difference between a team’s runs per over in a single game or wonder why a side that chased a target cautiously dropped in the standings despite winning. Under ICC and BCCI playing conditions, NRR is a cumulative tournament metric governed by precise mathematical formulas.
+
+![Net Run Rate in Cricket: Formula, Examples and Key Rules](/blog/how-net-run-rate-is-calculated.jpg)
+
+## What Is Net Run Rate in Cricket?
+
+The Net Run Rate is the difference between the average number of runs scored by a team per over throughout a full tournament or group stage and the average number of runs conceded by that team per over across the same matches.
+
+A positive NRR (+0.845) indicates that a team scores faster on average than its opponents, while a negative NRR (-0.412) shows that opponents have outscored them per over.
+
+In multi-team tournaments such as the Indian Premier League (IPL), ICC Men’s Cricket World Cup, and ICC Men’s T20 World Cup, Net Run Rate serves as the primary tie-breaker for teams level on points at the conclusion of the group stage. Tracking these margin shifts throughout the season is essential for fantasy analysts, sports researchers, and users monitoring live markets with a [Cricket id online bet](https://betvaultcricket.com/).
+
+## The Official Net Run Rate Formula
+
+According to ICC Standard Playing Conditions and IPL Match Playing Conditions, a team’s Net Run Rate is evaluated across all completed matches in that competition round—not by averaging single-match margins.
+
+> **Net Run Rate (NRR) = (Total Runs Scored ÷ Total Overs Faced) − (Total Runs Conceded ÷ Total Overs Bowled)**
+
+### Conversion of Balls to Decimal Overs
+
+Because a standard over consists of 6 legal deliveries, incomplete overs cannot be entered as base-10 decimals. For example, 18 overs and 3 balls is **18.5 overs**, not 18.3 overs.
+
+| Balls Bowled in Partial Over | Exact Fraction | Decimal Value Added to Completed Overs |
+| :--- | :--- | :--- |
+| 1 ball | 1/6 | +0.167 |
+| 2 balls | 2/6 | +0.333 |
+| 3 balls | 3/6 | +0.500 |
+| 4 balls | 4/6 | +0.667 |
+| 5 balls | 5/6 | +0.833 |
+
+If a team bats for 19 overs and 4 balls, the denominator used in the NRR formula is 19 + (4 ÷ 6) = **19.667 overs**.
+
+## Step-by-Step Worked Examples
+
+### Example 1: Single T20 Match (Chasing Team Wins)
+
+Consider a 20-over IPL match between Team A and Team B:
+
+- **First Innings:** Team A scores 180/6 in their full quota of 20.0 overs.
+- **Second Innings:** Team B chases down the target, scoring 181/4 in 18 overs and 2 balls.
+
+#### Step 1: Convert Overs into Decimals
+- Team A overs faced: **20.0 overs**
+- Team B overs faced: 18 + (2 ÷ 6) = **18.333 overs**
+
+#### Step 2: Calculate Team A’s Net Run Rate
+- **Scoring Rate:** 180 ÷ 20.0 = **9.000 runs per over**
+- **Conceding Rate:** 181 ÷ 18.333 = **9.873 runs per over**
+- **Team A NRR:** 9.000 − 9.873 = **-0.873**
+
+#### Step 3: Calculate Team B’s Net Run Rate
+- **Scoring Rate:** 181 ÷ 18.333 = **9.873 runs per over**
+- **Conceding Rate:** 180 ÷ 20.0 = **9.000 runs per over**
+- **Team B NRR:** 9.873 − 9.000 = **+0.873**
+
+Notice that in an uninterrupted match, the winning side’s positive NRR gain is the exact mirror image of the losing side’s negative NRR drop.
+
+### Example 2: Multi-Match Tournament Calculation
+
+A common error is taking the average of Match 1 and Match 2 NRR. Instead, tournament officials sum all runs and all overs across every match.
+
+Suppose the Mumbai Indians play two matches in the IPL:
+
+- **Match 1:** Score 190/5 in 20.0 overs; opponents score 170/8 in 20.0 overs.
+- **Match 2:** Score 152/3 in 16.3 overs (16.5 overs in decimals); opponents score 150/9 in 20.0 overs.
+
+#### Cumulative Calculation:
+- **Total Runs Scored:** 190 + 152 = **342 runs**
+- **Total Overs Faced:** 20.0 + 16.5 = **36.5 overs**
+- **Cumulative Scoring Rate:** 342 ÷ 36.5 = **9.370**
+- **Total Runs Conceded:** 170 + 150 = **320 runs**
+- **Total Overs Bowled:** 20.0 + 20.0 = **40.0 overs**
+- **Cumulative Conceding Rate:** 320 ÷ 40.0 = **8.000**
+- **Cumulative NRR:** 9.370 − 8.000 = **+1.370**
+
+Had you simply averaged the two single-match NRRs (+1.000 from Match 1 and +1.712 from Match 2), you would get **+1.356**—an inaccurate figure that diverges from official BCCI league standings.
+
+## Four Critical Rules That Change NRR Calculations
+
+### 1. The "All-Out" Rule (ICC Standard Clause 16.10)
+
+If a team is bowled out before completing its maximum allotted overs, the NRR formula does not use the actual overs they batted. Instead, the team is deemed to have faced the full theoretical quota of overs scheduled for that innings.
+
+For example, if Royal Challengers Bengaluru are bowled out for 120 in 15.2 overs during a 20-over match, their scoring rate is charged as:
+
+> **120 ÷ 20.0 = 6.000 runs per over** (not 120 ÷ 15.333 = 7.826)
+
+This penalty rule prevents a batting side from gaining a statistical scoring-rate advantage by collapsing aggressively. Conversely, when a chasing side successfully reaches its target with wickets in hand, only the actual overs faced are recorded.
+
+### 2. Rain-Affected Games and the DLS System
+
+When a match is interrupted by rain and a revised target is calculated for Team B via the Duckworth-Lewis-Stern (DLS) method, Team 1’s first-innings figures are adjusted for fair NRR parity.
+
+Under ICC playing conditions, if Team 2’s revised target is **T runs** in **O overs**, Team 1 is credited with having scored **T − 1 runs** in **O overs** (the par score). For instance, if Team 1 scored 210 in 20 overs, rain shortened the chase to 12 overs, and Team 2 was set a revised target of 135, Team 1’s official NRR entry for that match becomes **134 runs in 12.0 overs**.
+
+### 3. Washouts (No Result)
+
+If an encounter is washed out without an official result and points are split, the match is completely excluded from Net Run Rate calculations. Neither runs nor overs from an abandoned game count toward either team's tournament record.
+
+### 4. Super Overs
+
+When a tied match proceeds to a Super Over tie-breaker, the runs scored and deliveries bowled during the tie-breaker are excluded from cumulative tournament NRR. Only the statistics from the standard 20 overs per side are tallied.
+
+## The Influence of NRR on Match Strategies
+
+Because NRR rewards substantial victory margins—either by piling up mammoth totals or chasing down scores with overs to spare—teams aggressively tailor their tactics in the decisive stages of a tournament:
+
+- **Chasing Quickly:** During the final week of the IPL league phase, a chasing side ahead of the required rate will promote power-hitters to wrap up the chase in 15 or 16 overs rather than 19. Cutting 3 to 4 overs off the chase drastically shrinks the denominator, maximizing their NRR boost.
+- **NRR Preservation in Chases:** When a target is mathematically out of reach (such as 65 runs required off 12 balls with 8 wickets down), batters deliberately bat out the remaining deliveries for singles rather than hitting recklessly, avoiding the all-out 20-over penalty.
+
+Whether computing live qualification probabilities, evaluating squad balance, or checking match odds using a [Betting Id](https://betvaultcricket.com/) on portals such as [BetVault Cricket](https://betvaultcricket.com/), monitoring remaining overs in a chase provides immediate clarity on tournament trajectory. Readers interested in individual performance metrics can also review our guide on [how cricket strike rate and batting average are calculated](https://betvaultcricket.com/cricket-strike-rate-and-average-calculator-ipl-guide).
+
+## Frequently Asked Questions (FAQs)
+
+**What is considered a good Net Run Rate in the IPL?**  
+An NRR of +0.500 is generally sufficient to win multi-team tie-breakers for a top-four playoff spot across a 14-match IPL league season. An NRR of +1.000 or higher signifies dominant performances and virtually guarantees a top-two finish.
+
+**Is a team's Net Run Rate affected if they win by a narrow margin?**  
+Yes. Every concluded match updates a team's cumulative runs and overs. If a team already holds an exceptionally high seasonal NRR (such as +1.500) and clinches a narrow 1-run or last-ball victory, that game's modest rate pulls their overall cumulative NRR down.
+
+**What happens if two teams finish level on both points and Net Run Rate?**  
+Under IPL playing regulations, if two teams are tied on points and NRR, the team with the higher number of wins in the league stage advances. If wins are identical, their head-to-head record during the season decides the tie-breaker.
+
+**How are extra runs included in Net Run Rate calculations?**  
+All extras—including wides, no-balls, byes, and leg-byes—are included in the total runs scored and conceded. However, wides and no-balls do not count as legal deliveries faced or bowled in the over count.
+
+**Why does a team's NRR sometimes decline despite winning?**  
+A team’s cumulative NRR drops if its scoring rate in that specific match is lower than its existing tournament average. Because NRR is a cumulative aggregate across all games, a slow victory dampens the overall scoring velocity.
+
+**Is Net Run Rate calculated in Test cricket or the World Test Championship?**  
+No. Test cricket and the ICC World Test Championship (WTC) do not employ Net Run Rate. WTC standings are ranked based on Percentage of Points Won (PCT).
+
+## Conclusion: Turning Every Over Into a Strategic Asset
+
+Net Run Rate transforms every ball of an IPL campaign into an investment. Because calculations encompass every run scored and conceded across the season, and all-out dismissals are charged with full theoretical overs, a single dominant 60-run victory or a lightning-fast 14-over chase can outweigh multiple narrow finishes.`,
+  },
+  {
     slug: 'cricket-strike-rate-and-average-calculator-ipl-guide',
     tag: 'IPL Analytics',
     date: 'November 2026',

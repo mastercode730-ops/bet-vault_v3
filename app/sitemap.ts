@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/how-net-run-rate-is-calculated-with-examples`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/cricket-strike-rate-and-average-calculator-ipl-guide`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,

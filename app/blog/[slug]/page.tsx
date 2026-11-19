@@ -126,7 +126,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* Article body */}
         <div className="container-v3" style={{ maxWidth: '800px', paddingTop: '48px' }}>
           <article>
-            {slug === 'run-rate-calculator-cricket-nrr-guide' && (
+            {(slug === 'run-rate-calculator-cricket-nrr-guide' || slug === 'how-net-run-rate-is-calculated-with-examples') && (
               <RunRateCalculator />
             )}
             {slug === 'cricket-strike-rate-and-average-calculator-ipl-guide' && (
