@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/most-sixes-in-ipl-top-20-batters-all-time`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/how-net-run-rate-is-calculated-with-examples`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,

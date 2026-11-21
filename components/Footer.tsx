@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'Most Sixes in IPL History', href: '/most-sixes-in-ipl-top-20-batters-all-time' },
   { label: 'How NRR is Calculated',     href: '/how-net-run-rate-is-calculated-with-examples' },
   { label: 'Strike Rate & Average Guide', href: '/cricket-strike-rate-and-average-calculator-ipl-guide' },
   { label: 'Cricket Run Rate Guide',     href: '/run-rate-calculator-cricket-nrr-guide'     },
