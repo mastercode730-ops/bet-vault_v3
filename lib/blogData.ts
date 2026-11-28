@@ -11,6 +11,114 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'fastest-fifties-and-hundreds-in-ipl',
+    tag: 'IPL Records',
+    date: 'November 2026',
+    readTime: '8 min read',
+    title: 'Fastest Fifties and Hundreds in IPL History: Full List, Records, and Tactical Shifts (2008–2026)',
+    excerpt: 'Explore the fastest half-centuries and centuries in IPL history. From Yashasvi Jaiswal and Urvil Patel’s 13-ball fifties to Chris Gayle’s 30-ball century and Vaibhav Sooryavanshi’s record-breaking knocks, discover how T20 batting pacing evolved from 2008 to 2026.',
+    image: '/blog/fastest-fifties-and-hundreds-in-ipl.jpg',
+    content: `For the first fifteen IPL seasons, the fastest half-century in the tournament was held at 14 balls, jointly shared by KL Rahul and Pat Cummins. However, during the historic scoring explosion between May 2023 and May 2026, batters equalled or broke the top three half-century benchmarks and repeatedly challenged the second- and third-fastest centuries in tournament history.
+
+Across more than 1,240 matches contested from 2008 through the 2026 season, an IPL batter requires an average of 32.5 balls to reach fifty runs. Yet the names in the record books need less than half that tally, crossing the half-century threshold inside three explosive overs.
+
+![Fastest Fifties and Hundreds in IPL History: Full List, Records, and Tactical Shifts (2008–2026)](/blog/fastest-fifties-and-hundreds-in-ipl.jpg)
+
+## Fastest Fifties in IPL (2008–2026)
+
+The all-time record for the fastest half-century in IPL history is jointly held by two Indian stroke-makers: **Yashasvi Jaiswal** and **Urvil Patel**, each reaching the milestone in just **13 balls**.
+
+Yashasvi Jaiswal created history for Rajasthan Royals against Kolkata Knight Riders at Eden Gardens on May 11, 2023, hammering 26 runs in the opening over of a 150-run chase. Three years later, on May 10, 2026, Chennai Super Kings wicketkeeper-batter Urvil Patel matched the 13-ball record while chasing 204 against Lucknow Super Giants at Chepauk, hitting five consecutive sixes against Mohammed Shami on his way to 65 off 23 deliveries.
+
+| Rank | Player | Team | Balls Faced | Opposition | Venue | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 (tied) | Yashasvi Jaiswal | Rajasthan Royals | 13 | Kolkata Knight Riders | Kolkata | 11 May 2023 |
+| 1 (tied) | Urvil Patel | Chennai Super Kings | 13 | Lucknow Super Giants | Chennai | 10 May 2026 |
+| 3 (tied) | KL Rahul | Kings XI Punjab | 14 | Delhi Capitals | Mohali | 8 April 2018 |
+| 3 (tied) | Pat Cummins | Kolkata Knight Riders | 14 | Mumbai Indians | Pune | 6 April 2022 |
+| 3 (tied) | Romario Shepherd | Royal Challengers Bengaluru | 14 | Chennai Super Kings | Bengaluru | 3 May 2025 |
+| 6 (tied) | Yusuf Pathan | Kolkata Knight Riders | 15 | Sunrisers Hyderabad | Kolkata | 24 May 2014 |
+| 6 (tied) | Sunil Narine | Kolkata Knight Riders | 15 | Royal Challengers Bangalore | Bengaluru | 7 May 2017 |
+| 6 (tied) | Nicholas Pooran | Lucknow Super Giants | 15 | Royal Challengers Bangalore | Bengaluru | 10 April 2023 |
+| 6 (tied) | Jake Fraser-McGurk | Delhi Capitals | 15 | Sunrisers Hyderabad | Delhi | 20 April 2024 |
+| 6 (tied) | Jake Fraser-McGurk | Delhi Capitals | 15 | Mumbai Indians | Delhi | 27 April 2024 |
+| 6 (tied) | Vaibhav Sooryavanshi | Rajasthan Royals | 15 | Chennai Super Kings | Guwahati | 30 March 2026 |
+| 6 (tied) | Vaibhav Sooryavanshi | Rajasthan Royals | 15 | Royal Challengers Bengaluru | Guwahati | 10 April 2026 |
+| 6 (tied) | Abhishek Sharma | Sunrisers Hyderabad | 15 | Chennai Super Kings | Hyderabad | 18 April 2026 |
+| 6 (tied) | Vaibhav Sooryavanshi | Rajasthan Royals | 15 | Sunrisers Hyderabad | Jaipur | 25 April 2026 |
+
+### Comparing Top-Order Powerplay Surges with Death-Over Finishing
+
+Analyzing 13- and 14-ball fifties highlights two distinct tactical approaches:
+
+- **Powerplay Exploitation:** Jaiswal, Patel, and KL Rahul capitalized on the initial 6-over fielding restrictions, where only two outfielders are permitted outside the 30-yard circle. Clean lofted drives over mid-on and mid-off yielded risk-free boundaries against the hard new ball.
+- **Death-Overs Clutches:** Pat Cummins (2022) and Romario Shepherd (2025) achieved 14-ball fifties batting in the final four overs against reverse-swing and defensive wide lines. Shepherd’s blitz for RCB against CSK included taking 33 runs off Khaleel Ahmed in the 19th over.
+
+## Fastest Centuries in IPL (2008–2026)
+
+While half-century milestones have increasingly clustered around 13 to 15 balls, the ultimate record for the fastest century in IPL history remains **Chris Gayle’s 30-ball hundred** for Royal Challengers Bangalore against Pune Warriors India on April 23, 2013, at M. Chinnaswamy Stadium. Gayle raced to fifty in 17 balls and took only 13 more deliveries to reach three figures, finishing unbeaten on 175*.
+
+However, Gayle’s historic mark faced its strongest challenge a decade later from Rajasthan Royals batting prodigy **Vaibhav Sooryavanshi**, who smashed 35-ball and 36-ball centuries during the 2025 and 2026 campaigns.
+
+| Rank | Player | Team | Balls Faced | Opposition | Venue | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Chris Gayle | Royal Challengers Bangalore | 30 | Pune Warriors India | Bengaluru | 23 April 2013 |
+| 2 | Vaibhav Sooryavanshi | Rajasthan Royals | 35 | Gujarat Titans | Jaipur | 28 April 2025 |
+| 3 | Vaibhav Sooryavanshi | Rajasthan Royals | 36 | Sunrisers Hyderabad | Jaipur | 25 April 2026 |
+| 4 (tied) | Yusuf Pathan | Rajasthan Royals | 37 | Mumbai Indians | Mumbai | 13 March 2010 |
+| 4 (tied) | Heinrich Klaasen | Sunrisers Hyderabad | 37 | Kolkata Knight Riders | Delhi | 25 May 2025 |
+| 6 | David Miller | Kings XI Punjab | 38 | Royal Challengers Bangalore | Mohali | 6 May 2013 |
+| 7 (tied) | Travis Head | Sunrisers Hyderabad | 39 | Royal Challengers Bengaluru | Bengaluru | 15 April 2024 |
+| 7 (tied) | Priyansh Arya | Punjab Kings | 39 | Chennai Super Kings | New Chandigarh | 8 April 2025 |
+| 9 | Abhishek Sharma | Sunrisers Hyderabad | 40 | Punjab Kings | Hyderabad | 12 April 2025 |
+| 10 | Will Jacks | Royal Challengers Bengaluru | 41 | Gujarat Titans | Ahmedabad | 28 April 2024 |
+
+## Reasons Why IPL Scoring Pace Surged Between 2023 and 2026
+
+Statistical analysis shows a massive shift: **seven of the ten fastest centuries in IPL history occurred between 2024 and 2026**. Several structural developments explain this transformation:
+
+1. **The Impact Player Rule:** Introduced in 2023, the substitution rule lengthened batting lineups to No. 8 or No. 9. Top-order batters no longer needed to anchor between overs 7 and 11, completely removing the traditional middle-overs slowdown.
+2. **True Bounce Surfaces and Boundary Targeting:** Pitches at Hyderabad, Bengaluru, Delhi, and Jaipur offered consistent bounce, and batters capitalized on the two-bouncer-per-over allowance by pre-empting ramp, upper-cut, and pull shots against short bowling.
+3. **Rise of Young Indian Power-Hitters:** While earlier eras relied on overseas stars like Gayle, Gilchrist, Warner, and De Villiers for lightning hundreds, the 2025–2026 seasons were dominated by emerging Indian talents—including Sooryavanshi, Priyansh Arya, Abhishek Sharma, and Urvil Patel.
+
+## Match Momentum, Live Analysis, and Fan Strategy
+
+When a batter reaches fifty in 13 to 15 deliveries, expected totals and live win probabilities fluctuate dramatically in a 10-minute window. For Indian fans analyzing match trends, building fantasy teams, or following live action on [BetVault Cricket](https://betvaultcricket.com/) with an [Online cricket id](https://betvaultcricket.com/), understanding milestone speeds is crucial.
+
+Users evaluating live markets through a [Cricket id online bet](https://betvaultcricket.com/) account study powerplay run rates, boundary percentages, and boundary dimensions before evaluating totals. However, IPL history also cautions that individual speed does not guarantee victory: Jake Fraser-McGurk’s two 15-ball fifties in 2024 and Yusuf Pathan’s 37-ball hundred in 2010 both ended in defeats due to middle-order collapses following the initial surge.
+
+## Playoff Pressure: Fastest Fifties and Hundreds in Knockout Games
+
+Scoring at high tempo in knockout matches requires nerves of steel:
+
+- **Fastest Fifty in an IPL Playoff (16 balls):** Suresh Raina held this record solely for twelve years after bludgeoning 87 off 25 balls for CSK against Kings XI Punjab in Qualifier 2 of IPL 2014. During the 2026 Eliminator between Sunrisers Hyderabad and Rajasthan Royals, Vaibhav Sooryavanshi matched Raina’s 16-ball fifty benchmark, finishing with 97 off 29 balls.
+- **Fastest Hundred in an IPL Playoff (49 balls):** Wriddhiman Saha (115* for Kings XI Punjab in the 2014 Final), Rajat Patidar (112* for RCB in the 2022 Eliminator), and Shubman Gill (129 for Gujarat Titans in the 2023 Qualifier 2) jointly share the playoff century record.
+
+## Frequently Asked Questions (FAQs)
+
+**Who holds the record for the fastest fifty in IPL history?**  
+Yashasvi Jaiswal and Urvil Patel share the record with 13-ball fifties. Jaiswal set the record for Rajasthan Royals against KKR in May 2023, while Patel equalled it for Chennai Super Kings against LSG in May 2026.
+
+**Who holds the record for the fastest century in IPL history?**  
+Chris Gayle holds the record with a 30-ball century for Royal Challengers Bangalore against Pune Warriors India on April 23, 2013, finishing unbeaten on 175*.
+
+**Who has hit the fastest IPL century by an Indian batter?**  
+Vaibhav Sooryavanshi holds the Indian record with a 35-ball century for Rajasthan Royals against Gujarat Titans on April 28, 2025. He also holds the second-fastest Indian mark with a 36-ball hundred against SRH in April 2026, surpassing Yusuf Pathan’s 37-ball hundred from 2010.
+
+**Are wide balls counted when calculating fastest fifty or hundred milestones?**  
+No. Under official MCC and IPL scoring conditions, wide deliveries do not count toward a batter’s balls faced. Only legal deliveries and no-balls faced count toward milestone calculations.
+
+**Who has scored the most 15-ball fifties in IPL history?**  
+Vaibhav Sooryavanshi leads with three 15-ball fifties, all recorded during the 2026 IPL season against CSK, RCB, and SRH. Jake Fraser-McGurk ranks second with two 15-ball fifties achieved in 2024.
+
+**How can fans use milestone records to evaluate live matches?**  
+Comparing milestone tempos against venue par scores reveals whether a team is genuinely ahead of the required rate. Tracking powerplay boundary frequencies against new-ball bowling economies gives bettors and fantasy players deeper predictive clarity on live totals.
+
+## Looking Ahead
+
+While Chris Gayle’s 30-ball hundred has withstood thirteen IPL editions, the narrowing gap achieved by 35- and 36-ball centuries in 2025–2026 proves the record is within reach. With five batters having already recorded 13- or 14-ball fifties, a 12-ball half-century—matching Yuvraj Singh’s iconic 2007 T20 World Cup feat—stands as the next great frontier in IPL cricket.`,
+  },
+  {
     slug: 'best-bowling-figures-in-ipl-history',
     tag: 'IPL Bowling',
     date: 'November 2026',

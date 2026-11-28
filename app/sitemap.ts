@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/fastest-fifties-and-hundreds-in-ipl`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/best-bowling-figures-in-ipl-history`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,

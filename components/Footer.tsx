@@ -14,6 +14,7 @@ const quickLinks = [
 ];
 
 const blogLinks = [
+  { label: 'Fastest 50s & 100s in IPL', href: '/fastest-fifties-and-hundreds-in-ipl' },
   { label: 'Best IPL Bowling Figures',  href: '/best-bowling-figures-in-ipl-history' },
   { label: 'Highest IPL Scores',        href: '/highest-individual-scores-in-ipl-history' },
   { label: 'Most Sixes in IPL History', href: '/most-sixes-in-ipl-top-20-batters-all-time' },
